@@ -21,12 +21,10 @@ const cards = [
 const Home = () => {
   return (
     <div>
-      <div className="mb-10">
-        <h1 className="text-4xl font-bold text-gray-900">
-          Home
-        </h1>
-
-        <p className="mt-2 text-gray-600">
+      
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold text-gray-800">Home</h1>
+        <p className="mt-1 text-gray-500">
           Pilih salah satu card untuk melihat detail.
         </p>
       </div>
@@ -35,21 +33,21 @@ const Home = () => {
         {cards.map((card) => (
           <div
             key={card.id}
-            className="rounded-xl border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            className="rounded-lg border border-gray-300 bg-gray-50 p-5 shadow-sm transition hover:bg-white hover:shadow-md"
           >
-            <h2 className="text-xl font-bold text-gray-900">
+            <h2 className="text-lg font-semibold text-gray-800">
               {card.title}
             </h2>
 
-            <p className="mt-3 text-gray-600">
+            <p className="mt-2 text-sm text-gray-600">
               {card.description}
             </p>
 
             <Link
               to={`/detail/${card.id}`}
-              className="mt-6 inline-block rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
+              className="mt-5 inline-block rounded-md bg-gray-700 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-800"
             >
-              Lihat Detail
+              Lihat Detail →
             </Link>
           </div>
         ))}
