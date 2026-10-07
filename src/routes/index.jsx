@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/pageLayouts";
 import Home from "../pages/home";
 import About from "../pages/about";
-import Detail from "../pages/Detail";
+import Detail from "../pages/detail";
 import NotFound from "../pages/notFound";
 import FAQ from "../pages/faq";
 import Testimony from "../pages/testimony";
